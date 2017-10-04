@@ -4,5 +4,6 @@ public class MainClass
     {
         PrintString printString = new PrintString();
         printString.print("Hello World");
+        printString.print("проверка контрол версии !!");
     }
 }
