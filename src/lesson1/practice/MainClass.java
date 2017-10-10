@@ -5,6 +5,7 @@ public class MainClass {
     public static void main (String [] args){
         Herbivorous caw = new Caw();
         caw.spawn();
+        caw.eatPlants("Ням Ням");
         Caw caw1 = new Caw();
         System.out.println(caw1.die);
 

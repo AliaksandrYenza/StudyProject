@@ -11,4 +11,9 @@ public class Caw extends Herbivorous {
     public void eatPlants() {
         System.out.println("Caw eat plants");
     }
+
+    @Override
+    public void eatPlants(String str) {
+        System.out.println("Caw is viviparous"+str);
+    }
 }
