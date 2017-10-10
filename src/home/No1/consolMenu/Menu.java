@@ -111,7 +111,6 @@ public class Menu {
 
     public static void menuSearch(int [] array){
         boolean exit = false;
-        int number = Menu.getInt();
         int response;
         Search search = new Search();
         while (!exit) {
@@ -125,10 +124,10 @@ public class Menu {
                     exit = true;
                     break;
                 case 1:
-                    search.searchElement(array, number);
+                    search.searchElement(array);
                     break;
                 case 2:
-                    search.changeElement(array, number);
+                    search.changeElement(array);
                     break;
                 default:
                     System.out.println("Некорректный ввод, на что-то не то нажал? повтори еще раз \n");

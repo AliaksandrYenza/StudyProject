@@ -14,8 +14,8 @@ public class Operations {
     }
 
     public static void maxElement(int [] array){
-        int max = array[0];
-        for (int i = 0; i< ArrayGenerator.arrayGenerator().length; ++i){
+        int max = array[1];
+        for (int i = 1; i< ArrayGenerator.arrayGenerator().length; ++i){
             if (array[i] > max){
                 max = array[i];
             }
@@ -24,8 +24,8 @@ public class Operations {
     }
 
     public static void minElement(int [] array){
-        int min = array[0];
-        for (int i = 0; i< ArrayGenerator.arrayGenerator().length; ++i){
+        int min = array[1];
+        for (int i = 1; i< ArrayGenerator.arrayGenerator().length; ++i){
             if (array[i] < min){
                 min = array[i];
             }
