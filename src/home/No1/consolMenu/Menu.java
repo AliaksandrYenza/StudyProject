@@ -140,7 +140,6 @@ public class Menu {
         int i = 0;
         Scanner sc = new Scanner(System.in);
         i = sc.nextInt();
-        sc.close();
         return i;
     }
 }
