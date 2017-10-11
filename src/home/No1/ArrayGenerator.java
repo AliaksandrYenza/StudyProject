@@ -5,7 +5,7 @@ import java.util.Random;
 public class ArrayGenerator {
     public static int [] arrayGenerator(){
         Random generator = new Random();
-        int [] array = new int[(int) generator.nextInt(10)];
+        int [] array = new int[(int) generator.nextInt(9)+1];
         boolean flag;
         int number;
         for (int i=0; i<array.length; i++){
