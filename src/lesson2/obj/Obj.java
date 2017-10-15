@@ -17,10 +17,10 @@ public class Obj {
         this.speed = speed;
     }
 
-    public void objectCollections(){
-        Obj object = new Obj(1, "fd", 45.5, 454);
-
-    }
+//    public void objectCollections(){
+//        Obj object = new Obj(1, "fd", 45.5, 454);
+//
+//    }
 
     public Integer getId() {
         return id;
