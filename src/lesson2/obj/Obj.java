@@ -17,11 +17,6 @@ public class Obj {
         this.speed = speed;
     }
 
-//    public void objectCollections(){
-//        Obj object = new Obj(1, "fd", 45.5, 454);
-//
-//    }
-
     public Integer getId() {
         return id;
     }
@@ -54,15 +49,7 @@ public class Obj {
         this.speed = speed;
     }
 
-    public static void main(String[] args){
-        System.out.print("Set: \n");
-        Testable testable = new SetObj();
-        testable.test();
-        System.out.print("Map: \n");
-        testable = new MapObj();
-        testable.test();
-        System.out.print("List: \n");
-        testable = new ListObj();
-        testable.test();
+    public String toString(){
+        return "\tObject No." + id + " name: " + name + " weight: " + weight + " speed: " + speed;
     }
 }

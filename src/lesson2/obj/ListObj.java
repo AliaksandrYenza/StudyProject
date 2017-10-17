@@ -11,7 +11,7 @@ public class ListObj implements Testable {
             new Obj(1, "Opel", 12.5, 120),
             new Obj(2, "Ferrari", 13.4, 214),
             new Obj(3, "Opel", 32.5, 452),
-            new Obj(4, "VV", 32.4 ,423),
+            new Obj(4, "Volva", 32.4 ,423),
     };
     private List list = new LinkedList();
 
@@ -30,7 +30,7 @@ public class ListObj implements Testable {
 
     private void printListEnteries(List list) {
         for (int i = 0; i<list.size(); i++){
-            System.out.println("Entry #" + i + ": " + list.get(i));
+            System.out.println("Entry #" + i + ": " + list.get(i).toString());
         }
         System.out.println("Array length: "+arrayO.length);
         System.out.println("List size: "+list.size());

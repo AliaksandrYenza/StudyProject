@@ -12,7 +12,7 @@ public class SetObj implements Testable{
             new Obj(1, "Opel", 12.5, 120),
             new Obj(2, "Ferrari", 13.4, 214),
             new Obj(3, "Opel", 32.5, 452),
-            new Obj(4, "VV", 32.4 ,423),
+            new Obj(4, "Volva", 32.4 ,423),
     };
     private Set<Obj> set = new HashSet<>();
 
@@ -25,7 +25,7 @@ public class SetObj implements Testable{
     }
     private void printMSetEnteries(Obj[] set) {
         for (Obj entry : set){
-            System.out.println("Entry #" + ": " + entry);
+            System.out.println("Entry #" + ": " + entry.toString());
         }
         System.out.println("Array length: "+arrayO.length);
         System.out.println("List size: "+ set.length);
