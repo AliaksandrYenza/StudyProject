@@ -10,7 +10,7 @@ public class MapObj implements Testable {
     private Obj[] arrayO = {
             new Obj(1, "Opel", 12.5, 120),
             new Obj(2, "Ferrari", 13.4, 214),
-            new Obj(3, "Opel_1", 32.5, 452),
+            new Obj(3, "Opel", 32.5, 452),
             new Obj(4, "Volva", 32.4 ,423),
     };
 //    Obj obj = new Obj(null, null, null, null);
