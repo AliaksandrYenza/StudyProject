@@ -122,10 +122,10 @@ public class RealizationMethodsList implements Methods {
     public void sort(ArrayList<No2.Objects> collection) {
         List list = new ArrayList(collection);
         list.sort(Comparator.comparingInt(No2.Objects::getSpeed));
-        System.out.println("Car collection sorted by speed: ");
+        System.out.println("O collection sorted by speed: ");
         new Print().printListEnteries(list);
         list.sort(Comparator.comparing(object -> ((No2.Objects)object).getName()));
-        System.out.println(" Car collection sorted by name: ");
+        System.out.println("O collection sorted by name: ");
         new Print().printListEnteries(list);
     }
 
