@@ -1,14 +1,16 @@
 package No2.ListObjects;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.text.Collator;
-import java.util.*;
-
 import No2.ArrayObjects;
 import No2.Methods.Methods;
 import No2.Println.Print;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Objects;
 
 public class RealizationMethodsList implements Methods {
 
@@ -181,11 +183,11 @@ public class RealizationMethodsList implements Methods {
 
     @Override //+!
     public List<No2.Objects> Pannert(ArrayList<No2.Objects> collection, int speed, double weight) {
-        List<No2.Objects> patternCars = new ArrayList<No2.Objects>();
+        List<No2.Objects> patternObj = new ArrayList<No2.Objects>();
         for (No2.Objects objects : collection) {
             if (objects.getSpeed() < speed && objects.getWeight() > weight)
-                patternCars.add(objects);
+                patternObj.add(objects);
         }
-        return patternCars;
+        return patternObj;
     }
 }

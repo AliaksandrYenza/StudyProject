@@ -1,9 +1,10 @@
 package No2.Println;
 
+import No2.ArrayObjects;
 import No2.Objects;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class Print {
 
@@ -34,5 +35,21 @@ public class Print {
         for (int i = 0; i<list.size(); i++){
             System.out.println("Entry #" + i + ": " + list.get(i).toString());
         }
+    }
+
+    public void printMapEntries(Map<String, Objects> map) {
+        for(Map.Entry<String, Objects> entry: map.entrySet()) {
+            System.out.println("Key: " + entry.getKey() + ", value: " + entry.getValue().toString());
+        }
+        System.out.println("Array length: " + ArrayObjects.arrayObjectsInfo.length);
+        System.out.println("Map size: " + map.size());
+    }
+
+    public void printMapEntries(Map<String, Objects> map, String message) {
+        for(Map.Entry<String, Objects> entry: map.entrySet()) {
+            System.out.println("Key: " + entry.getKey() + ", value: " + entry.getValue().toString()+ "Meassage: "+ message);
+        }
+        System.out.println("Array length: " + ArrayObjects.arrayObjectsInfo.length);
+        System.out.println("Map size: " + map.size());
     }
 }
